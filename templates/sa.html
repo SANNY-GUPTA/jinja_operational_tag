@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <center>
+            <h1> {{name}} </h1>
+            {% if a > 1000 %}
+                <h1> a is greater </h1>
+            {% else %}
+            <h1> b is greater </h1>
+            {% endif %}
+            <hr>
+
+
+            <h1> {{name}} </h1>
+            {% if a > b %}
+                <h1> a is greater </h1>
+            {% else %}
+            <h1> b is greater </h1>
+            {% endif %}
+            <hr>
+
+
+            <h1> {{name}} </h1>
+            {% if a > b %}
+                {% if a > c %}
+                    <h1> a is greater b,c </h1>
+                {% else %}
+                    <h1> c is greater a,b </h1>
+                {% endif %}
+            {% else %}
+                {% if b > c %}
+                    <h1> b is greater than a,c </h1>
+                {% else %}
+                    <h1> c is greater than a,b </h1>
+                {% endif %}     
+            {% endif %}
+
+
+        </center>
+    </body>
+</html>
